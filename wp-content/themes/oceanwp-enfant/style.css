@@ -1,13 +1,57 @@
 /*
-Theme Name: OceanWP Child
+Theme Name: OceanWP Child Theme
 Theme URI: https://oceanwp.org/
-Template: oceanwp
+Description: OceanWP WordPress theme. Sample child theme.
 Author: OceanWP
-Author URI: https://oceanwp.org/about-oceanwp/
-Description: OceanWP is the perfect theme for your project. Lightweight and highly extendable, it will enable you to create almost any type of website such a blog, portfolio, business website and WooCommerce storefront with a beautiful &amp; professional design. Very fast, responsive, RTL &amp; translation ready, best SEO practices, unique WooCommerce features to increase conversion and much more. You can even edit the settings on tablet &amp; mobile so your site looks good on every device. Work with the most popular page builders as Elementor, Beaver Builder, Brizy, Visual Composer, Divi, SiteOrigin, etc... Developers will love his extensible codebase making it a joy to customize and extend. Best friend of Elementor &amp; WooCommerce. Looking for a Multi-Purpose theme? Look no further! Check the demos to realize that it's the only theme you will ever need: https://oceanwp.org/demos/
-Tags: two-columns,right-sidebar,footer-widgets,blog,news,custom-background,custom-menu,post-formats,rtl-language-support,sticky-post,editor-style,threaded-comments,translation-ready,buddypress,custom-colors,featured-images,full-width-template,theme-options,e-commerce,block-styles,wide-blocks,accessibility-ready
-Version: 3.4.3.1680802106
-Updated: 2023-04-06 19:28:26
-
+Author URI: https://oceanwp.org/
+Template: oceanwp
+Version: 1.0
 */
 
+/* Parent stylesheet should be loaded from functions.php not using @import */
+
+.line-undertitle {
+    border : solid 1px white;
+}
+
+.line-underpicture {
+    border : solid 1px white;
+}
+
+
+.form2 {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.form2 h3 {
+color: white;
+font-size: 30px;
+font-weight: bold;
+}
+
+.form2 label {
+color: white;
+}
+
+.champsaisie {
+background-color: white;
+}
+
+.separationform {
+ border: solid 1px white;
+ height: 400px;
+ margin: 20px;
+}
+
+.wpcf7-form-control.has-spinner.wpcf7-submit.boutonform {
+color: white;
+background-color: #E0B9B4;
+display: flex;
+margin: auto;
+border-radius: 5px;
+text-transform: none;
+font-weight: 300;
+padding: 20px 50px 20px 50px;
+}

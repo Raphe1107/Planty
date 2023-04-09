@@ -1,17 +1,33 @@
 <?php
-// Exit if accessed directly
-if ( !defined( 'ABSPATH' ) ) exit;
+/**
+ * OceanWP Child Theme Functions
+ *
+ * When running a child theme (see http://codex.wordpress.org/Theme_Development
+ * and http://codex.wordpress.org/Child_Themes), you can override certain
+ * functions (those wrapped in a function_exists() call) by defining them first
+ * in your child theme's functions.php file. The child theme's functions.php
+ * file is included before the parent theme's file, so the child theme
+ * functions will be used.
+ *
+ * Text Domain: oceanwp
+ * @link http://codex.wordpress.org/Plugin_API
+ *
+ */
 
-// BEGIN ENQUEUE PARENT ACTION
-// AUTO GENERATED - Do not modify or remove comment markers above or below:
+/**
+ * Load the parent style.css file
+ *
+ * @link http://codex.wordpress.org/Child_Themes
+ */
+function oceanwp_child_enqueue_parent_style() {
 
-if ( !function_exists( 'chld_thm_cfg_locale_css' ) ):
-    function chld_thm_cfg_locale_css( $uri ){
-        if ( empty( $uri ) && is_rtl() && file_exists( get_template_directory() . '/rtl.css' ) )
-            $uri = get_template_directory_uri() . '/rtl.css';
-        return $uri;
-    }
-endif;
-add_filter( 'locale_stylesheet_uri', 'chld_thm_cfg_locale_css' );
+	// Dynamically get version number of the parent stylesheet (lets browsers re-cache your stylesheet when you update the theme).
+	$theme   = wp_get_theme( 'OceanWP' );
+	$version = $theme->get( 'Version' );
 
-// END ENQUEUE PARENT ACTION
+	// Load the stylesheet.
+	wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'oceanwp-style' ), $version );
+	
+}
+
+add_action( 'wp_enqueue_scripts', 'oceanwp_child_enqueue_parent_style' );
