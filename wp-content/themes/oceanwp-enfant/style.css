@@ -9,6 +9,8 @@ Version: 1.0
 */
 
 /* Parent stylesheet should be loaded from functions.php not using @import */
+
+/* Header  */
 #menu-item-320 {
 background-color : #DC9F96;
 margin-right : -15px;
@@ -19,48 +21,8 @@ color : white;
 }
 
 
-.allcompteurbouton {
-display: flex; 
-}
-    
-.compteur {
-color : white; 
-display: flex;
-}
-        
-.zero {
-color : black;
-background-color: white;
-padding: 30px 20px 15px 20px;
-border-radius: 5px 0px 0px 5px;
- }
-        
-        
-.plus {
-background-color: #DC9F96;
-padding: 10px ;
-border-radius: 0px 5px 0px 0px;
-margin-bottom: -5px;
-}
-        
-.moins {
-background-color: #DC9F96;
-padding: 10px;
- border-radius: 0 0 5px 0;
-border-top: white solid 1px;
-margin-top: 5px;
-}
-        
-        
-.bouton p {
-background-color: #E0B9B4;
-color: white;
-padding: 15px 40px 15px 40px;
-border-radius: 5px;
-margin-left: 10px;
-margin-top: 30px;
-margin-right: 50px;
-}
+/* Formulaire de contact */
+
 
 .line-undertitle {
 border : solid 1px white;
@@ -68,6 +30,7 @@ border : solid 1px white;
 
 .line-underpicture {
 border : solid 1px white;
+
 }
 
 
@@ -92,9 +55,9 @@ background-color: white;
 }
 
 .separationform {
- border: solid 1px white;
- height: 400px;
- margin: 20px;
+border: solid 1px white;
+height: 400px;
+margin: 20px;
 }
 
 .wpcf7-form-control.has-spinner.wpcf7-submit.boutonform {
