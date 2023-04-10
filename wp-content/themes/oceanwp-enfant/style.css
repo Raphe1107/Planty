@@ -20,47 +20,54 @@ color : white;
 
 
 .allcompteurbouton {
-display: flex;
-
+display: flex; 
 }
+    
 .compteur {
 color : white; 
 display: flex;
 }
-
+        
 .zero {
 color : black;
 background-color: white;
-padding: 15px 20px 15px 20px;
-border-radius: 5px 0px 0px 5px
-}
-
-
+padding: 30px 20px 15px 20px;
+border-radius: 5px 0px 0px 5px;
+ }
+        
+        
 .plus {
 background-color: #DC9F96;
-padding: 10px;
+padding: 10px ;
 border-radius: 0px 5px 0px 0px;
+margin-bottom: -5px;
 }
-
+        
 .moins {
 background-color: #DC9F96;
 padding: 10px;
-border-radius: 0 0 5px 0;
+ border-radius: 0 0 5px 0;
+border-top: white solid 1px;
+margin-top: 5px;
 }
-
-
-.bouton {
+        
+        
+.bouton p {
 background-color: #E0B9B4;
 color: white;
-padding: 20px;
+padding: 15px 40px 15px 40px;
+border-radius: 5px;
+margin-left: 10px;
+margin-top: 30px;
+margin-right: 50px;
 }
 
 .line-undertitle {
-    border : solid 1px white;
+border : solid 1px white;
 }
 
 .line-underpicture {
-    border : solid 1px white;
+border : solid 1px white;
 }
 
 
